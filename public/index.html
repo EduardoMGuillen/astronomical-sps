@@ -283,13 +283,15 @@
 
         .hero-logo {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
             gap: 2rem;
+            flex-wrap: wrap;
         }
 
         .hero-logo img {
-            max-width: 600px;
+            max-width: 300px;
             width: 100%;
             height: auto;
             object-fit: contain;
@@ -686,8 +688,13 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .hero-logo {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
             .hero-logo img {
-                max-width: 500px;
+                max-width: 250px;
             }
             
             .videos-grid {
@@ -723,8 +730,13 @@
         }
 
         @media (max-width: 480px) {
+            .hero-logo {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
             .hero-logo img {
-                max-width: 400px;
+                max-width: 200px;
             }
             
             .videos-grid {
@@ -827,19 +839,19 @@
         <div class="videos-grid">
             <div class="video-container fade-in">
                 <video autoplay muted loop playsinline>
-                    <source src="/videos/video1.mp4" type="video/mp4">
+                    <source src="/Reels/video1.mp4" type="video/mp4">
                     Tu navegador no soporta el elemento de video.
                 </video>
             </div>
             <div class="video-container fade-in">
                 <video autoplay muted loop playsinline>
-                    <source src="/videos/video2.mp4" type="video/mp4">
+                    <source src="/Reels/video2.mp4" type="video/mp4">
                     Tu navegador no soporta el elemento de video.
                 </video>
             </div>
             <div class="video-container fade-in">
                 <video autoplay muted loop playsinline>
-                    <source src="/videos/video3.mp4" type="video/mp4">
+                    <source src="/Reels/video3.mp4" type="video/mp4">
                     Tu navegador no soporta el elemento de video.
                 </video>
             </div>
