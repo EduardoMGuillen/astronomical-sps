@@ -483,6 +483,8 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         .event-image {
@@ -496,7 +498,8 @@
             padding: 2rem;
             display: flex;
             flex-direction: column;
-            min-height: 200px;
+            flex: 1;
+            min-height: 220px;
         }
 
         .event-card::before {
@@ -536,12 +539,14 @@
 
         .event-description {
             color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 1.5rem;
+            margin-bottom: 0;
             flex-grow: 1;
         }
 
         .event-content .btn {
             margin-top: auto;
+            align-self: flex-start;
+            width: 100%;
         }
 
         /* Coming Soon Event Card */
@@ -881,15 +886,6 @@
     <section class="section" id="eventos">
         <h2 class="section-title fade-in">PRÓXIMOS EVENTOS</h2>
         <div class="events-grid">
-            <div class="event-card fade-in">
-                <img src="/Eventos/conjuro-party.jpg" alt="El Conjuro Halloween Party" class="event-image">
-                <div class="event-content">
-                    <div class="event-date">Sábado 1 de Noviembre</div>
-                    <div class="event-title">El Conjuro Halloween Party</div>
-                    <div class="event-description">Una fiesta de disfraces épica con la mejor música y ambiente</div>
-                    <a href="https://www.instagram.com/casablanca_sps/" class="btn btn-primary">Más Información</a>
-                </div>
-            </div>
             <div class="event-card fade-in">
                 <img src="Eventos/110725 Viernes Precopeo.png" alt="Viernes de Precopeo" class="event-image">
                 <div class="event-content">
