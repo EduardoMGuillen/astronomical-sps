@@ -494,6 +494,9 @@
 
         .event-content {
             padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 200px;
         }
 
         .event-card::before {
@@ -534,6 +537,11 @@
         .event-description {
             color: rgba(255, 255, 255, 0.7);
             margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .event-content .btn {
+            margin-top: auto;
         }
 
         /* Coming Soon Event Card */
