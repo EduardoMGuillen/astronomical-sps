@@ -8,6 +8,10 @@
   ],
   "routes": [
     {
+      "src": "/rifas/?",
+      "dest": "/public/rifas.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/public/$1"
     }
